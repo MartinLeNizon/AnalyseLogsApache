@@ -1,7 +1,5 @@
 echo "-----------------------------------------------------------"
 
-execDir=``
-
 if [ "$1" = "" ]
 then
   echo "No directory given, default to current"
@@ -158,18 +156,16 @@ fi
 echo "-----------------------------------------------------------"
 echo 
 
-cd $execDir
-
 # log result in $2 if filename provided
 if [ "$2" != "" ]
 then
-  if [ ! -w "$2" ]
+  if [ ! -w ../$2 ]
   then
-    touch $2
+    touch ../$2
   fi
-  if [ -w "$2" ]
+  if [ -w ../"$2" ]
   then
-    echo "$Directory;$resultRC;$resultOut;$resultErr;$resultFiles;$resultGlobal" >>$2
+    echo "$Directory;$resultRC;$resultOut;$resultErr;$resultFiles;$resultGlobal" >>../$2
   fi
 fi
 

@@ -94,7 +94,7 @@ int lectureOptions(int argc, char * argv[], int & option, string & fichierLog, s
 // Utilisation de <getopt.h>
 {
     if(argc < 2 || argc > 9){
-        cerr << "Le programme doit être utilisé de cette manière : ./analog [-g nomfichier.dot] [-e] [-t heure] -u baseURL nomfichier.log" << endl;
+        cerr << "Le programme doit être utilisé de cette manière : bin/analog nomfichier.log -u baseURL [-g nomfichier.dot] [-e] [-t heure]" << endl;
         return 1;
     }
 
@@ -112,13 +112,13 @@ int lectureOptions(int argc, char * argv[], int & option, string & fichierLog, s
             tFlag = true;
             break;
         case 'u': baseURL = optarg; break;
-        default: cerr << "Le programme doit être utilisé de cette manière : ./analog [-g nomfichier.dot] [-e] [-t heure] nomfichier.log" << endl; return 1;
+        default: cerr << "Le programme doit être utilisé de cette manière : bin/analog nomfichier.log -u baseURL [-g nomfichier.dot] [-e] [-t heure]" << endl; return 1;
         }
     }
 
     if(optind < argc) fichierLog = argv[optind];
     else{
-        cerr << "Le programme doit être utilisé de cette manière : ./analog [-g nomfichier.dot] [-e] [-t heure] nomfichier.log" << endl;
+        cerr << "Le programme doit être utilisé de cette manière : bin/analog nomfichier.log -u baseURL [-g nomfichier.dot] [-e] [-t heure]" << endl;
         return 1;
     }
 

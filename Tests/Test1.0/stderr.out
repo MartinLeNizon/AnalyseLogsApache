@@ -1,2 +1,2 @@
 ../../bin/analog: invalid option -- 'i'
-Le programme doit être utilisé de cette manière : ./analog [-g nomfichier.dot] [-e] [-t heure] nomfichier.log
+Le programme doit être utilisé de cette manière : bin/analog nomfichier.log -u baseURL [-g nomfichier.dot] [-e] [-t heure]
