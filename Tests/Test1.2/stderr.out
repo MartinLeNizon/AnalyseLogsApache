@@ -1,0 +1,1 @@
+Le programme doit être utilisé de cette manière : ./analog [-g nomfichier.dot] [-e] [-t heure] -u baseURL nomfichier.log

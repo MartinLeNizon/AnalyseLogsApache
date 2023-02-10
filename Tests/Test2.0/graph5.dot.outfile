@@ -1,0 +1,14 @@
+digraph{
+node0 [label="/page3.html"];
+node1 [label="http://intranet-if.insa-lyon.fr/page2.html"];
+node2 [label="/image.jpg"];
+node3 [label="http://intranet-if.insa-lyon.fr/page3.html"];
+node4 [label="/page1.html"];
+node5 [label="/page2.html"];
+node6 [label="http://intranet-if.insa-lyon.fr/page1.html"];
+node1 -> node0 [label="1"];
+node3 -> node2 [label="1"];
+node1 -> node4 [label="1"];
+node3 -> node5 [label="1"];
+node6 -> node5 [label="2"];
+}

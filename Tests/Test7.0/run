@@ -1,0 +1,1 @@
+../../bin/analog ../Logs/long.log -t 12 -e -g graph10.dot
