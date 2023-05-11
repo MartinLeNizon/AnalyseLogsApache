@@ -1,0 +1,14 @@
+Test ID;Return code validation;Out result;StdErr result;File creation result;Global result
+Test0.0;1;1;1;2;1
+Test0.1;1;1;1;2;1
+Test1.0;1;1;1;2;1
+Test1.1;1;1;1;2;1
+Test1.2;1;1;1;2;1
+Test1.3;1;1;1;2;1
+Test1.4;1;1;1;2;1
+Test2.0;1;1;1;1;1
+Test3.0;1;1;1;2;1
+Test4.0;1;1;1;2;1
+Test5.0;1;1;1;2;1
+Test6.0;1;1;1;2;1
+Test7.0;1;1;1;1;1

@@ -50,7 +50,7 @@ $(OBJDIR)%.o: $(SRCDIR)%.cpp Makefile
 .PHONY:clean mrproper
 
 clean:
-	@rm -rf $(OBJDIR)*.o
+	@rm -rf $(OBJ)
 
 mrproper: clean
 	@rm -rf $(EXEC)

@@ -14,7 +14,7 @@
 //--------------------------------------------------- Interfaces utilisées
 #include <fstream>
 
-#include "LigneLog.h"
+// #include "LigneLog.h"
 
 //------------------------------------------------------------------------
 // Rôle de la classe FluxLog
